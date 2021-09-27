@@ -1,0 +1,163 @@
+:root
+{
+    --black: #333;
+    --white: #fff;
+    --grey: #bdbdbd;
+}
+
+*, 
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: 'Space Mono', monospace;
+    color: var(--black);   
+}
+
+img
+{
+    max-width: 100%;   
+}
+
+.main
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.wrap
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.content
+{
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;  
+}
+
+h3
+{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.08rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+.scarecrow-img
+{
+    height: 22rem;   
+}
+
+.img 
+{
+    margin: 0 auto;   
+}
+
+h1
+{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -3.5%;
+    letter-spacing: -0.35rem;
+    margin: 3rem 0;
+}
+
+p
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    letter-spacing: -0.035rem;  
+    margin-bottom: 3rem; 
+}
+
+.btn
+{
+    background-color: var(--black);
+    color: var(--white);
+    width: 21.6rem;
+    height: 6.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.btn a:visited
+{
+    color: var(--white);
+}
+
+.footer
+{
+    font-size: 12px;
+    text-align: center;
+    color: var(--grey);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    
+    margin-bottom: -10px;
+    
+} 
+
+/**************************/
+/* Media Query */
+/**************************/
+
+@media (min-width: 900px)
+{
+    .wrap
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img{
+       
+        width: 50%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+    .scarecrow-img
+    {
+        height: 40rem; 
+        
+    }
+
+    .content
+    {
+        width: 50%;
+        padding: 70px;
+    }
+}
